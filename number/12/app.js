@@ -4,6 +4,6 @@
 50 => 0 час 50 минут
 240 => 4 час 0 минут*/
 const a = +prompt();
-y = a % 60;
-n = (a - y) / 60;
+const y = a % 60;
+const n = (a - y) / 60;
 console.log(n + 'час' + y + 'минут');
