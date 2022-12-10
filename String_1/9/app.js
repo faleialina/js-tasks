@@ -2,12 +2,12 @@
 // Определите, через какое время автомобили встретятся, если расстояние между
 // ними равно S км. Добавить проверку на ввод только чисел
 
-const V1 = +prompt('скорость первого автомобиля');
-const V2 = +prompt('скорость второго автомобиля');
-const S = +prompt('путь');
-const t = S/(V1+V2);
-if (isNaN(V1,V2,S)) {
-    console.log('Нужно вводить число!');
+const a = +prompt();
+const b = +prompt();
+console.log(Math.max(a, b));
+
+if (a > b) {
+    console.log(a);
 } else {
-    console.log(t);
+    console.log(b);
 }
