@@ -3,7 +3,7 @@
 // 345 -> 3
 // 100 -> 1
 
-const cm = prompt();
+const cm = +prompt();
 const m = cm / 100;
 if (isNaN(cm)) {
     console.log('Нужно вводить число!');
