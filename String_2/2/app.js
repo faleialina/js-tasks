@@ -6,6 +6,6 @@
 const a = prompt().trim();
 if (!isNaN(a)) {
     a % 2 === 0 ? console.log('четное') : console.log('нечетное');
-}else {
+} else {
     console.log(a.split(''));
 }
