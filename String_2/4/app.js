@@ -3,7 +3,7 @@
 
 const a = prompt().trim();
 if (isNaN(a)) {
-    console.log(a.toLowerCase()); 
+    console.log(a.toLowerCase());
     console.log(a.length);
 } else {
     console.log('ошибка ввода');
