@@ -1,6 +1,6 @@
 // Пользователь вводит дату в формате 'xxxx-xx-xx'. Преобразуйте эту дату в формат
 //'xx.xx.xxxx'.
-
-
-const a = `HTML JavaScript PHP`;
-console.log(a.replaceAll(' ', '-').toUpperCase());
+let date = 'xxxx-xx-xx';
+let arr = date.split('-');
+let newDate = arr.reverse();
+console.log(newDate.join('.'));
