@@ -1,4 +1,5 @@
-// ‘HTML JavaScript PHP’ преобразовать в "HTML-JAVASCRIPT-PHP"
+// Дан массив ['я', 'учу', 'javascript', '!']. С помощью метода join преобразуйте массив в
+//строку 'я+учу+javascript+!'.
 
-const a = `HTML JavaScript PHP`;
-console.log(a.replaceAll(' ', '-').toUpperCase());
+const val = ['я', 'учу', 'javascript', '!'];
+console.log(val.join('+'));
