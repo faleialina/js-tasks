@@ -1,25 +1,10 @@
-// На вход программе подается строка из букв А, Г, Ц, Т. Напишите программу,
-// которая подсчитывает сколько букв
-// АааГГЦЦцТТтттА => А – 4 Г – 2 Ц – 3 Т – 5 
-
+// На вход подается url. Если он начинается с http, содержит хотя бы один “/” и
+// заканчивается подстрокой .com или .ru, то вывести true, в противном случае false
 
 const str = prompt().trim();
-let result_А = 0;
-let result_Г = 0;
-let result_Ц = 0;
-let result_Т = 0;
-for (i = 0; i < str.length; i++) {
-    if (str[i] === 'А') {
-        result_А += 1
-    }
-    if (str[i] === 'Г') {
-        result_Г += 1
-    }
-    if (str[i] === 'Ц') {
-        result_Ц += 1
-    }
-    if (str[i] === 'Т') {
-        result_Т += 1
-    }
-}
-console.log(`А – ${result_А} Г – ${result_Г} Ц – ${result_Ц} Т – ${result_Т}`);
+console.log(str[0] === 'h' && str[1] === 't' && str[2] === 't' && str[3] === 'p' && str.includes('/') && (str.endsWith('.com') || str.endsWith('.ru')));
+
+
+
+
+
