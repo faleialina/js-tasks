@@ -1,16 +1,12 @@
-// На вход программе подается строка, где каждое слово заканчивается “_”.
-// Программа должна убрать “_” и первую букву каждого слова (помимо первого),
-// преобразовать в верхний регистр (for)
+// На вход программе подается строка. Напишите программу, которая подсчитывает
+// количество буквенных символов в нижнем регистре.
+// abcABCD12345 => 3
 
-
-const str = prompt().trim().toLowerCase();
-let result = '';
-for (i = 0; i < str.length; i++) {
-    if (str[i] !== '_' && str[i - 1] !== '_') {
-        result += str[i]
-    }
-    if (str[i-1]==='_'){
-        result += str[i].toUpperCase()
+const a = prompt().trim();
+let result = 0;
+for (i = 0; i < a.length; i++) {
+    if (a[i] === a[i].toLowerCase()) {
+        result += 1
     }
 }
 console.log(result);
