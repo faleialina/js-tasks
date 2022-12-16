@@ -4,7 +4,7 @@
 // я очень хороший текст => true
 
 
-const str = prompt().trim();
-console.log(str.includes('хорош') || str.includes('ХОРОШ'))
+const str = prompt().trim().toLowerCase();
+console.log(str.includes('хорош'))
 
 

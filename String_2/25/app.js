@@ -3,22 +3,22 @@
 // АааГГЦЦцТТтттА => А – 4 Г – 2 Ц – 3 Т – 5 
 
 
-const str = prompt().trim();
+const str = prompt().trim().toLowerCase();
 let result_А = 0;
 let result_Г = 0;
 let result_Ц = 0;
 let result_Т = 0;
 for (i = 0; i < str.length; i++) {
-    if (str[i] === 'А') {
+    if (str[i] === 'а') {
         result_А += 1
     }
-    if (str[i] === 'Г') {
+    else if (str[i] === 'г') {
         result_Г += 1
     }
-    if (str[i] === 'Ц') {
+    else if (str[i] === 'ц') {
         result_Ц += 1
     }
-    if (str[i] === 'Т') {
+    else if (str[i] === 'т') {
         result_Т += 1
     }
 }
