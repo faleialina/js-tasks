@@ -1,6 +1,11 @@
-// На вход программе подается переменная date, в котрой лежит дата в формате
-//'xxxx-xx-xx'. Преобразуйте эту дату в формат 'xx/xx/xxxx’. (reverse)
-let date = 'xxxx-xx-xx';
-let arr = date.split('-');
-let newDate = arr.reverse();
-console.log(newDate.join('/'));
+// На вход подается строка из нескольких строк. Необходимо преобразовать слово в
+// хештег. Добавить проверку на ввод текстовых значений
+// hSСhOol СomPAnY-> #hschoolcompany
+const a = 'hSСhOol СomPAnY'.toLowerCase().replaceAll(' ', '');
+if (isNaN(a)) {
+    console.log(`#${a}`);
+} else {
+    console.log('Введите текст')
+}
+
+

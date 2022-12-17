@@ -1,19 +1,10 @@
-// На вход программе подаётся строка. Замените все @ на '!' с помощью глобального
-//поиска и замены (2 способа)
+// На вход подается строка '/home/user/dir/file.txt'. Необходимо вернуть имя файла
+// (подстрока после последнего символа “/" ) из полного пути к файлу('file.txt')
 
 
-const val = prompt().trim();
-// 1 способ
-if (isNaN(val)) {
-    console.log(val.replaceAll('@', '!'));
-} else {
-    console.log('ошибка ввода');
-}
-// 2 способ
-if (isNaN(val)) {
-    console.log(val.replace(/@/g, '!'));
-} else {
-    console.log('ошибка ввода');
-}
+
+const a = '/home/user/dir/file.txt';
+console.log(a.slice(a.lastIndexOf('/')+1));
+
 
 
