@@ -1,11 +1,8 @@
-// На вход подается 1 слово. Необходимо преобразовать слово в хештег. Добавить
-// проверку на ввод текстовых значений
-// hSСhOol -> #hschool
-
-const a = 'hSСhOol'.toLowerCase();
-if (isNaN(a)) {
-    console.log(`#${a}`);
-} else {
-    console.log('Введите слово')
+// Дан массив с элементами [2, 3, 4, 5]. С помощью цикла for найдите произведение
+// элементов этого массива
+const arr = [2, 3, 4, 5];
+let result = 1;
+for (i=0;i< arr.length;i++){
+result*=arr[i];
 }
-
+console.log(result);
