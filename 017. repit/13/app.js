@@ -1,12 +1,9 @@
-// Задача на слово палиндром. Если слово одинаковое с 2 сторон, то true, в
-// противном случае false
-// anna -> true
-// мем -> true
-// тест -> false
-const a = 'anna'.toLowerCase();
-const b = a.split('').reverse().join('');
-if (a === b) {
-    console.log(true);
-} else {
-    console.log(false);
+//Найдите минимальное значение в массиве используя цикл
+const arr = [1, 2, 3, 4, -1, 6, 7, 8, 9, 10];
+let value = arr[0];
+for (let i = 0; i < arr.length; i++) {
+    if (value > arr[i]) {
+        value = arr[i];
+    }
 }
+console.log(value)
