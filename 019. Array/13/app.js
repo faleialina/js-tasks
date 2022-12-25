@@ -1,9 +1,10 @@
-//Найдите минимальное значение в массиве используя цикл
+// Дан массив с числами. Числа могут быть положительными и отрицательными.
+// Найдите сумму всех положительных элементов массива циклом for of
 const arr = [1, 2, 3, 4, -1, 6, 7, 8, 9, 10];
-let value = arr[0];
-for (let i = 0; i < arr.length; i++) {
-    if (value > arr[i]) {
-        value = arr[i];
+let sum = 0
+for (const i of arr) {
+    if (i > 0) {
+        sum += i
     }
 }
-console.log(value)
+console.log(sum);
