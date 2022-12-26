@@ -1,9 +1,8 @@
-//Найдите минимальное значение в массиве используя цикл
-const arr = [1, 2, 3, 4, -1, 6, 7, 8, 9, 10];
-let value = arr[0];
-for (let i = 0; i < arr.length; i++) {
-    if (value > arr[i]) {
-        value = arr[i];
+//Дано число 7, найдите все числа кратные 7 до 100
+let i = 7
+while (i <= 100) {
+    if (i % 7 === 0) {
+        console.log(i);
     }
+    i++
 }
-console.log(value)
