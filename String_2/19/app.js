@@ -4,8 +4,8 @@
 const arr = prompt().trim().toLowerCase().split(' ');
 let result = '';
 for (let i = 0; i < arr.length; i++) {
-    const F = arr[i][0].toUpperCase();
-    const FromOne = arr[i].slice(1);
+    let F = arr[i][0].toUpperCase();
+    let FromOne = arr[i].slice(1);
     result += F + FromOne + ' '
 }
 console.log(result);

@@ -6,8 +6,8 @@
 
 
 const arr = prompt().trim().split(' ');//['Chris', 'Alan']
-if (arr[0][0]=== arr[0][0].toUpperCase()&&arr[1][0]=== arr[1][0].toUpperCase()){
+if (arr[0][0] === arr[0][0].toUpperCase() && arr[1][0] === arr[1][0].toUpperCase()) {
     console.log(true);
-}else {
+} else {
     console.log(false);
 }

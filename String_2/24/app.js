@@ -4,7 +4,7 @@
 
 const a = prompt().trim();
 let result = 0;
-for (i = 0; i < a.length; i++) {
+for (let i = 0; i < a.length; i++) {
     if (a[i] === a[i].toLowerCase()) {
         result += 1
     }

@@ -8,7 +8,7 @@ let result_А = 0;
 let result_Г = 0;
 let result_Ц = 0;
 let result_Т = 0;
-for (i = 0; i < str.length; i++) {
+for (let i = 0; i < str.length; i++) {
     if (str[i] === 'а') {
         result_А += 1
     }

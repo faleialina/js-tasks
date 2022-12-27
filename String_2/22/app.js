@@ -6,7 +6,7 @@
 
 const a = prompt().trim();
 let result = '';
-for (i = 0; i < a.length; i++) {
+for (let i = 0; i < a.length; i++) {
     if (a[i] === a[i].toUpperCase()) {
         result += a[i].toLowerCase()
     } else if (a[i] === a[i].toLowerCase()) {

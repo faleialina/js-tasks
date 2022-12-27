@@ -9,7 +9,7 @@ for (i = 0; i < str.length; i++) {
     if (str[i] !== '_' && str[i - 1] !== '_') {
         result += str[i]
     }
-    if (str[i-1]==='_'){
+    if (str[i - 1] === '_') {
         result += str[i].toUpperCase()
     }
 }

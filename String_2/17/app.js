@@ -7,4 +7,4 @@ for (let i = 0; i < val.length; i++) {
         sum += 1
     };
 }
-console.log(val.length-sum);
+console.log(val.length - sum);
