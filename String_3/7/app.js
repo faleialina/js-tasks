@@ -4,7 +4,7 @@
 
 
 const a = '/home/user/dir/file.txt';
-console.log(a.slice(a.lastIndexOf('/')+1));
+console.log(a.slice(a.lastIndexOf('/') + 1));
 
 
 

@@ -2,5 +2,4 @@
 // программу, которая повторяет данное предложение нужное количество раз.
 const str = 'Falei Alina!';
 const a = 3;
-
 console.log(str.repeat(a))

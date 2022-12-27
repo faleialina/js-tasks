@@ -4,7 +4,7 @@
 
 const str = '66665'.trim();
 if (2 < str && str < 11 || str === 26 && str < 30) {
-   console.log('Верно');
-}else {
+    console.log('Верно');
+} else {
     console.log('Неверно');
 }

@@ -3,4 +3,4 @@
 
 const a = 'Happy new year';
 const f = 'new year';
-a.endsWith(f)? console.log(true): console.log(false);
+a.endsWith(f) ? console.log(true) : console.log(false);

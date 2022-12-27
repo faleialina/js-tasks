@@ -3,7 +3,7 @@
 // anna -> true
 // мем -> true
 // тест -> false
-const a = 'anna'.toLowerCase();
+const a = 'anna'.toLowerCase().trim();
 const b = a.split('').reverse().join('');
 if (a === b) {
     console.log(true);

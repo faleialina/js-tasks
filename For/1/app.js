@@ -18,3 +18,4 @@ if (a.length > 0) {
 } else {
     console.log('Ошибка ввода');
 }
+

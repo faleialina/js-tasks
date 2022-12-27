@@ -4,4 +4,4 @@
 
 const a = 'string-2'.toLowerCase();
 const f = 'StRiNg'.toLowerCase();
-console.log(a===f);
+console.log(a === f);

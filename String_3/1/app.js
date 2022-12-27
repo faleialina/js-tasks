@@ -5,7 +5,6 @@
 
 const a = prompt().trim().toLowerCase();
 if (isNaN(a)) {
-
     console.log(a.repeat(3));
 } else {
     console.log('ошибка ввода ');
