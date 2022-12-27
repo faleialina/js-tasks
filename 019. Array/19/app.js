@@ -2,11 +2,15 @@
 // массива. Напишите код заполнения массива методом prompt. Проверить каждый
 // prompt на число (ввод строки, проверка на isNaN)
 
-const arr = [1, 2, 3, 4, -1, 6, 7, 8, 9, 10];
-let value = arr[0];
-for (let i = 0; i < arr.length; i++) {
-    if (value > arr[i]) {
-        value = arr[i];
+const value = prompt('вводите число, явдяющееся количеством элементов будущего массива');
+const arr = [];
+
+for (let i = 1; i <= value; i++) {
+    let b = prompt('заполнение массива');
+    if (isNaN(b)) {
+        console.log('введите число');
+    } else {
+        arr.push(b);
     }
 }
-console.log(value)
+console.log(arr);
