@@ -4,9 +4,9 @@ const a = +prompt();
 if (a === 12) {
     console.log('зима');
 } else if (a === 1) {
-    console.log('зимаа');
+    console.log('зима');
 } else if (a === 2) {
-    console.log('зимаа');
+    console.log('зима');
 } else if (a === 3) {
     console.log('весна');
 } else if (a === 4) {

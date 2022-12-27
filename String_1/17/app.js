@@ -2,8 +2,6 @@
 // вывести текущую строку в большом регистре
 
 const str = prompt();
-
-
-if (isNaN (str)) {
+if (isNaN(str)) {
     console.log(str.toUpperCase());
 } 

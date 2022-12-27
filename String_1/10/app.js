@@ -8,8 +8,7 @@ const x = prompt();
 const y = 1 / x;
 if (isNaN(x)) {
     console.log('Нужно вводить число!');
-}
-else {
+}else {
     if (x === 0) {
         console.log('Обратного числа не существует');
     } else {
