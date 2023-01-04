@@ -2,3 +2,28 @@
 // массива с клавиатуры. Необходимо вывести true, если хотя бы 1 элемент массива –
 // число. Some, forEach
 
+const n = prompt('количество элементов массива');
+const arr = [];
+for (let i = 0; i < n; i++) {
+    arr.push(prompt());
+}
+// let bool = arr.some(function (elem) {
+//     if (isNaN(elem)) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// })
+// console.log(bool);
+
+// 2-й вариант
+let bool = false;
+arr.forEach(function (elem) {
+    if (!isNaN(elem)) {
+        bool = true;
+        // return true;
+    } else {
+        bool = false;
+    }
+})
+console.log(bool);
