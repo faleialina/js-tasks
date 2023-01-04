@@ -5,3 +5,22 @@
 // каждого введенного элемента. forEach
 
 
+const value = 5;
+const a = prompt();
+const b = prompt();
+let arr = [];
+for (let i = 0; i < value; i++) {
+    let newValue = prompt();
+    arr.push(newValue);
+}
+let result = [];
+arr.forEach(function (elem) {
+    if (!isNaN(elem) && (elem !== a || elem !== b)) {
+        result.push(elem)
+    }
+});
+if (result.length === 0) {
+    console.log('Массив пуст');
+} else {
+    console.log(result);
+}

@@ -6,5 +6,17 @@ const value = 5;
 const arr = [];
 for (let i = 0; i < value; i++) {
     let a = prompt();
-arr.push(a)
+    arr.push(a)
+}
+let result = arr.filter(function (elem) {
+    if (isNaN(elem)) {
+        return false
+    } else {
+        return true
+    }
+})
+if (result.length > 0) {
+    console.log(result);
+} else {
+    console.log('Массив пуст');
 }
