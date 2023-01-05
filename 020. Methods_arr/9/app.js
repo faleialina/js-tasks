@@ -6,7 +6,7 @@ const n = prompt('количество элементов массива');
 for (let i = 0; i < n; i++) {
    arr.push(prompt('заполнение массива'))
 }
-// //1-й способ
+//1-й способ
 arr.forEach(function (elem) {
 let sum = 0
    if (!isNaN(elem)) {
@@ -18,7 +18,7 @@ let sum = 0
 });
 
 
-
+//1-й способ
 // let result = arr.reduce(function(sum, elem) {
 // 	return sum + elem;
 // }, 0);
