@@ -1,11 +1,15 @@
-// Дан массив с элементами [1, 2, 3, 4, 5]. С помощью цикла for of найдите сумму
-// элементов этого массива
+// На входе задан массив [‘hschool’, ‘hschool_0’, ‘hschool_1’]. Напишите все возможные
+// способы обращения к первому и последнему элементам
 
-const arr = [1, 2, 3, 4, 5];
-let result = 0
-for (let i of arr) {
-    result += i
-}
-console.log(result);
+
+const arr =['hschool', 'hschool_0', 'hschool_1'];
+//1-й способ
+console.log(arr[0]);
+console.log(arr[2]);
+
+//2-й способ
+console.log(arr[0]);
+arr.reverse()
+console.log(arr[0]);
 
 
