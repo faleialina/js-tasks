@@ -8,7 +8,9 @@
 const arr = [];
 const n = prompt('количество элементов массива');
 for (let i = 0; i < n; i++) {
-    arr.push(prompt('заполнение массива'))
+    arr.push(prompt('заполнение массива').trim())
+    if (isNan(elem)) continue
+    
 }
 const result = arr.map(function (elem) {
     if (elem % 2 == 0) {

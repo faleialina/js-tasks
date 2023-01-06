@@ -5,18 +5,18 @@
 const arr = [];
 const n = prompt('количество элементов массива');
 for (let i = 0; i < n; i++) {
-  arr.push(prompt('заполнение массива'))
+   arr.push(prompt('заполнение массива'))
 }
 //1-й способ
-arr.forEach(function (elem) {
 let result = 1
+arr.forEach(function (elem) {
    if (!isNaN(elem)) {
-    result*=elem
-      console.log(result);
+      result *= elem
    } else {
       console.log('ввод только чисел');
    }
 });
+console.log(result);
 
 
 //2-й способ

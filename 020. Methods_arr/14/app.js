@@ -1,10 +1,32 @@
-// Дан массив c числами, например: [10, 20, 30, 50, 235, 3000]. Выведите на экран только
-// те числа из массива, которые начинаются на цифру 1, 2 или 5 -> 10, 20, 50, 235
-const arr = [10, 20, 30, 50, 235, 3000];
-let result = ''
-for (let i = 0; i < arr.length; i++) {
-    if (String(arr[i]).charAt(0) === '1' || String(arr[i]).charAt(0) === '2' || String(arr[i]).charAt(0) === '5') {
-        result += arr[i] + ' '
+// На входе n – количество элементов массива. Далее производится заполнение
+// массива с клавиатуры. Необходимо создать новый массив из элементов, каждое
+// значение которого имеет вид #name
+// [“hschool”, “company”] -> [“#hschool”, “#company”]
+
+const n = prompt('количество элементов массива');
+const arr = [];
+
+for (let i = 0; i < n; i++) {
+    const value = prompt('заполнение массива');
+    if (isNaN(value)) {
+        arr.push(value);
     }
 }
-console.log(result);
+// 1-й способ
+// const result = arr.map(function (elem) {
+//     return '#' + elem
+// })
+// console.log(result);
+
+// 2-й способ
+// const result = [];
+// arr.forEach(function (elem) {
+//     result.push('#' + elem)
+// })
+// console.log(result);
+
+// 3-й способ
+const result = arr.reduce(function (sum, elem) {
+    return sum + '#' + elem + ' '
+}, '')
+console.log(result.trim().split(' '));

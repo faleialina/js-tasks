@@ -1,10 +1,22 @@
-// Дан массив с числами. Числа могут быть положительными и отрицательными.
-// Найдите сумму всех положительных элементов массива циклом for of
-const arr = [1, 2, 3, 4, -1, 6, 7, 8, 9, 10];
-let sum = 0
-for (const i of arr) {
-    if (i > 0) {
-        sum += i
+// На входе n – количество элементов массива. Далее производится заполнение
+// массива arr с клавиатуры. Также в памяти есть статичная переменная со
+// значением javascript. Необходимо создать новый массив из отфильтрованных
+// значений, где строка массива arr включают значение переменной javascript.
+// Проверка на ввод только текстовых значений на заполнение массива. forEach
+
+const n = prompt ('количество элементов массива');
+const arr = [];
+const lenguech = 'javascript';
+
+for (let i = 0; i < n; i++) {
+    let value = prompt();
+    if(isNaN(value)){
+        arr.push(value);
     }
 }
-console.log(sum);
+const newarr = [];
+arr.forEach(function (elem) {
+    if(elem.includes(lenguech)){
+    newarr.push(elem)}
+})
+console.log(newarr);
