@@ -8,15 +8,15 @@
 const arr = [];
 const n = prompt('количество элементов массива');
 for (let i = 0; i < n; i++) {
-    arr.push(prompt('заполнение массива').trim())
-    if (isNan(elem)) continue
-    
-}
+    const element = prompt('заполнение массива').trim();
+    if (isNaN(element)) continue
+    arr.push(element)
+    }
 const result = arr.map(function (elem) {
-    if (elem % 2 == 0) {
-        return 'чет';
+    if (elem % 2 === 0) {
+        return `${elem}: чет`;
     } else {
-        return 'нечет';
+        return `${elem}: нечет`;
     }
 })
 console.log(result);
