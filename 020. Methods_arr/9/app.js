@@ -4,23 +4,20 @@
 const arr = [];
 const n = prompt('количество элементов массива');
 for (let i = 0; i < n; i++) {
-   arr.push(prompt('заполнение массива'))
+   const newDeta = prompt('заполнение массива')
+   if (isNaN(newDeta)) continue
+   arr.push(newDeta)
 }
 //1-й способ
-// let sum = 0
-// arr.forEach(function (elem) {
-//    if (!isNaN(elem)) {
-//     sum+=elem
-//       console.log(sum);
-//    } else {
-//       console.log('ввод только чисел');
-//    }
-// });
+let sum = 0
+arr.forEach(function (elem) {
+   sum += elem
+});
+console.log(sum);
 
+// //2-й способ
+// let result = arr.reduce(function (sum, elem) {
+//    return sum + elem;
+// }, 0);
 
-//1-й способ
-let result = arr.reduce(function(sum, elem) {
-	return sum + elem;
-}, 0);
-
-console.log(result);
+// console.log(result);

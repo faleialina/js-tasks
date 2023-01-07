@@ -17,13 +17,9 @@ for (let i = 0; i < n; i++) {
 // console.log(bool);
 
 // 2-й вариант
-let bool = false;
+
 arr.forEach(function (elem) {
     if (!isNaN(elem)) {
-        bool = true;
-        // return true;
-    } else {
-        bool = false;
+        console.log(`true: ${elem}`);
     }
 })
-console.log(bool);
