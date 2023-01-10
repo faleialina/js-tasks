@@ -9,8 +9,38 @@
 // 4 -> [[1, 2, 3, 4], [5, 6]
 // 5 -> [[1, 2, 3, 4, 5], [6]]
 // 6 -> [[1, 2, 3, 4, 5, 6]]
-const arr = [1, 2, 3, 4, 5, 6];
-const n = '0'//prompt('количество элементов в новом массиве');
-if (isNan(n) || n > arr.length || n === 0 || n === '' || String(n)) {
-    console.log('ошибка ввода');
+
+let arr = [1, 2, 3, 4, 5, 6];
+const n = 2//prompt('количество элементов в новом массиве');
+const result = []
+
+// if (isNan(n) || n > arr.length || n === 0 || n === '' || String(n)) {
+//     console.log('ошибка ввода');
+// }
+for (let i = 0; i < arr.length; i+=n) {
+    let a = [];
+    for (let j = 0; j < n; j++) {
+        a.push(arr[j])
+    }
+    let narr = arr.splice(n)
+    console.log(arr);
+
+    result.push(a)
+
 }
+
+console.log(result);
+
+// let arr = [1, 2, 3, 4, 5, 6];
+// const n = 3//prompt('количество элементов в новом массиве');
+// const result = []
+
+// arr.forEach(function (elem) {
+//     let a = [];
+//     for (let elem = 0; elem < n; elem++) {
+//         a.push(arr[elem])
+//         let arr = arr.splice(n)
+//     }
+//     result.push(a)
+// })
+// console.log(result);
