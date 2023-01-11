@@ -1,12 +1,10 @@
-// На вход программе подается натуральное число n. Напишите программу, которая
-// печатает звездный прямоугольник размерами n×10 несколькими способами.
-// 2 -> **********
-//      **********
-const n = 2;
+//На вход подается url https://techrocks.ru/. Необходимо вырезать строку после протокола и перед доменом первого уровня
+const str = 'https://techrocks.ru/'.split('/')
+console.log(str);
 let result = '';
-for (let i = 0; i < n; i++) {
-    result += `${'*'.repeat(10)}\n`;
-}
-console.log(result);
-
-
+str.forEach(function (elem) {
+    if (elem !== 'https:' && elem !== '') {
+        result += elem;
+    }
+})
+console.log(result.slice(0, result.indexOf('.')));
