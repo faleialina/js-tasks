@@ -5,14 +5,17 @@
 const n = prompt('количество элементов массива');
 const arr = [];
 for (let i = 0; i < n; i++) {
-    const value = +prompt('заполнение массива')
-    if (!isNaN(value)) {
-        arr.push(value);
-    } else if (value === 0) {
-        break
-    }
+    arr.push(+prompt('заполнение массива'));
 }
-let result = arr.reduce(function (sum, elem) {
-    return sum + elem
-}, 0)
-console.log(result);
+let isNull = false;
+let sum = 0;
+arr.forEach(function (elem) {
+    if (elem === 0) {
+        isNull = true
+    }
+    if (isNull === false) {
+        sum += elem;
+    }
+})
+
+console.log(sum);
