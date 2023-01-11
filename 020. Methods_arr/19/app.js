@@ -5,7 +5,7 @@
 const n = prompt('количество элементов массива');
 const arr = [];
 for (let i = 0; i < n; i++) {
-    const value = prompt('заполнение массива')
+    const value = +prompt('заполнение массива')
     if (!isNaN(value)) {
         arr.push(value);
     } else if (value === 0) {
